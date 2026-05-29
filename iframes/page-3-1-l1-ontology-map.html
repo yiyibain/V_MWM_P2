@@ -233,9 +233,9 @@
   }
   #panel-map .tree-wrap > .tree,
   #panel-rev .tree-wrap > .tree {
-    /* Make the root <ul> a horizontally-scrollable canvas */
-    overflow: auto;
-    max-height: 720px;
+    /* Keep the patient map fully visible after deeper branches are added. */
+    overflow-x: auto;
+    overflow-y: visible;
     width: 100%;
     box-sizing: border-box;
     padding: 22px 12px 28px;
