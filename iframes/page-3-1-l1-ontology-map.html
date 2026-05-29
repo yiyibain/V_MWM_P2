@@ -2402,6 +2402,7 @@ body{padding:0!important;color:var(--navy,#2A276E)!important;}
 .tab-intro-list{font-size:13px;color:var(--muted,#5B5484);line-height:1.75;margin:0;padding-left:18px;display:flex;flex-direction:column;gap:4px;}
 .tab-intro-list li{padding-left:2px;}
 .tab-intro-list strong{color:var(--navy,#2A276E);}
+.tab-intro-new-tag{display:inline-flex;align-items:center;justify-content:center;margin-left:8px;padding:1px 7px;border-radius:999px;background:rgba(241,203,20,.18);border:1px solid rgba(241,203,20,.62);color:var(--navy,#2A276E);font-size:10px;font-weight:700;line-height:1.4;vertical-align:middle;}
 .tab-intro-outcomes{margin-top:4px;padding-left:16px;display:flex;flex-direction:column;gap:2px;}
 .tab-intro-outcomes .legend-mark.win{color:var(--teal,#007A87);font-weight:700;}
 .tab-intro-outcomes .legend-mark.lost{color:var(--gray,#8A8A8A);font-weight:700;text-decoration:line-through;}
@@ -2587,6 +2588,7 @@ body{padding:0!important;color:var(--navy,#2A276E)!important;}
 <div>3）患者做出"未成交但未流失"的选择，回退至上游节点等待下一轮触发 <span class="legend-mark retry">[RETRY]</span>。</div>
 </div>
 </li>
+<li contenteditable="false"><strong>本链路新增考虑：</strong>本链路在“去药店检查/查询”节点下考虑了患者点购晖致产品情况，成为“患者在药店点购晖致产品”节点<span class="tab-intro-new-tag">新</span></li>
 </ol>
 </div>
 <div aria-label="正向患者链路控制" class="panel-toolbar panel-toolbar-map" data-tree-panel="panel-map" data-tree-toolbar="">

@@ -3043,7 +3043,24 @@ body.hide-patient-top #page-4-2 .p42-v3-inline #panel-map .l1-map-session{displa
 }
 #page-4-2 .p42-v3-inline #panel-map .subtree-col-right .lr-node{
   position:relative!important;
-  z-index:3!important;
+  z-index:10!important;
+  background-clip:padding-box!important;
+  box-shadow:0 0 0 3px var(--surface),0 1px 0 rgba(42,39,108,.04)!important;
+}
+#page-4-2 .p42-v3-inline #panel-map .subtree-col-right .lr-node.lr-l1{
+  box-shadow:0 0 0 3px var(--accent-soft),0 1px 0 rgba(42,39,108,.04)!important;
+}
+#page-4-2 .p42-v3-inline #panel-map .subtree-col-right .lr-connector:not(.lr-single) > li::after{
+  display:none!important;
+}
+#page-4-2 .p42-v3-inline #panel-map .subtree-col-right .lr-vline{
+  z-index:0!important;
+}
+#page-4-2 .p42-v3-inline #panel-map .subtree-col-right .lr-connector > li::before,
+#page-4-2 .p42-v3-inline #panel-map .subtree-col-right .lr-h-gap,
+#page-4-2 .p42-v3-inline #panel-map .subtree-col-right .lr-h-gap--long{
+  position:relative!important;
+  z-index:0!important;
 }
 #page-4-2 .p42-v3-inline #panel-map .subtree-col-left .mini-tree-wrap,#page-4-2 .p42-v3-inline #panel-map .subtree-col-left ul.tree.mini-tree.mini-patient{
   overflow:visible!important;
