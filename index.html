@@ -232,7 +232,7 @@ section.page.active{display:block!important;visibility:visible!important;positio
 </style></head><body class=""><div class="layout"><aside aria-label="目录" class="sidebar"><div class="brand"><div class="brand-eyebrow">Sprint 2 Update</div><h1>Viatris World Model</h1></div><nav class="nav" id="nav"><button class="active" data-target="page-1" type="button"><span class="nav-num">1</span><span class="nav-label">项目全景回顾</span></button>
 <button class="" data-target="page-2" type="button"><span class="nav-num">2</span><span class="nav-label">业务本体（Ontology）分层结构</span></button>
 <button class="nav-disabled" type="button"><span class="nav-num">3</span><span class="nav-label">L1：患者行为层</span></button>
-<button class="nav-child" data-target="page-3-1" type="button"><span class="nav-num">3.1</span><span class="nav-label">L1 Ontology Map: 患者从发病到购买晖致产品的全链路</span></button>
+<button class="nav-child" data-target="page-3-1" type="button"><span class="nav-num">3.1</span><span class="nav-label">L1 Ontology Map: 患者从发病到购买晖致产品的全链路<span class="nav-new">新</span></span></button>
 <button class="nav-child" data-target="page-3-2" type="button"><span class="nav-num">3.2</span><span class="nav-label">L1 数据结构</span></button>
 <button class="nav-child" data-target="page-3-3" type="button"><span class="nav-num">3.3</span><span class="nav-label">L1 数据产出示例</span></button>
 <button class="nav-disabled" type="button"><span class="nav-num">4</span><span class="nav-label">L2：市场状态层</span></button>
@@ -2817,7 +2817,7 @@ body::after #page-4-2 .p42-v3-inline{
 #page-4-2 .p42-v3-inline .tab-panel{padding:0!important;}
 #page-4-2 .p42-v3-inline #panel-sim{display:none!important;}
 #page-4-2 .p42-v3-inline #panel-map{display:block!important;}
-body.hide-patient-top #panel-map .l1-map-session #page-4-2 .p42-v3-inline{display:none!important;}
+body.hide-patient-top #page-4-2 .p42-v3-inline #panel-map .l1-map-session{display:none!important;}
 #page-4-2 .p42-v3-inline #panel-map .l1-map-session{margin:10px 0 18px!important;}
 #page-4-2 .p42-v3-inline #panel-map .l1-map-session .page-header{margin:0 auto 18px!important;}
 #page-4-2 .p42-v3-inline #panel-map .l1-map-session .panel-toolbar-map{margin:0 auto 12px!important;}
@@ -5347,6 +5347,9 @@ body.hide-patient-top #panel-map .l1-map-session #page-4-2 .p42-v3-inline{displa
       node.parentElement.classList.toggle('p44-collapsed');
     }
   }, true);
+  page.querySelectorAll('.p44-object-card').forEach(card=>{
+    branches(card).forEach(li=>li.classList.add('p44-collapsed'));
+  });
 })();
 </script></div></section>
 <section class="page" data-title="L2 数据结构及 Signal 产出方法论" id="page-4-4" hidden><div class="p42-stage">
